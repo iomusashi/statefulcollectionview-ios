@@ -1,0 +1,6 @@
+framework module Pods_StatefulCollectionView_Tests {
+  umbrella header "Pods-StatefulCollectionView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

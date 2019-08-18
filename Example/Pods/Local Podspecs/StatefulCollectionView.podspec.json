@@ -1,0 +1,22 @@
+{
+  "name": "StatefulCollectionView",
+  "version": "0.1.0",
+  "summary": "A short description of StatefulCollectionView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iomusashi/StatefulCollectionView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iomusashi": "ionicsoft@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iomusashi/StatefulCollectionView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "StatefulCollectionView/Classes/**/*"
+}
