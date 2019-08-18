@@ -21,15 +21,12 @@ public final class StatefulCollectionView: UIView {
   
   /// Determines whether to enable/disable pull-to-refresh support
   public var canPullToRefresh = false
-  
-  /// Determines whether data is fetched in a paging basis
-  public var canLoadMorePages = false
-  
-  /// Distance from the bottom of the collectionView's vertical content offset
-  public var loadMoreTriggerThreshold: CGFloat = 64.0
-  
+
   // MARK: - Stateful delegate
   public var statefulDelegate: StatefulCollectionViewDelegate?
+  
+  // MARK: - Customization delegate
+  public var customization: StatefulCollectionViewCustomization?
 
   // MARK: Internal properties
   internal lazy var collectionView = UICollectionView()
@@ -42,11 +39,7 @@ public final class StatefulCollectionView: UIView {
   }()
   
   internal lazy var refreshControl = UIRefreshControl()
-  
-  internal var loadMoreViewIsErrorView = false
-  internal var latestLoadMoreError: NSError?
-  internal var watchForLoadMore = false
-  
+
   internal var state: StatefulCollectionViewState = .idle
   
   internal var viewMode: StatefulCollectionViewMode = .collection {
@@ -91,15 +84,13 @@ internal enum StatefulCollectionViewState {
   case collectionViewLoadingInitially
   case emptyOrError
   case pullToRefreshLoading
-  case pagingLoading
-  
+
   var isLoading: Bool {
     switch self {
     case .loadingInitially: fallthrough
     case .collectionViewLoadingInitially: fallthrough
-    case .pullToRefreshLoading: fallthrough
-    case .pagingLoading: return true
-      
+    case .pullToRefreshLoading: return true
+
     default: return false
     }
   }

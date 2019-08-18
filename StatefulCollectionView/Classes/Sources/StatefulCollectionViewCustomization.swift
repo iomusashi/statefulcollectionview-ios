@@ -36,17 +36,6 @@ public protocol StatefulCollectionViewCustomization {
   func statefulCollection(_ collectionView: StatefulCollectionView,
                           errorAtInitialLoad errorOrNil: NSError?,
                           errorView: InitialLoadErrorView) -> UIView
-  
-  /**
-   Called when the collectionView failed to load a paged request.
-   
-   - Parameter collectionView: StatefulCollectionView instance.
-   - Parameter errorAtLoadingPage: The error that occured after loading more pages.
-   - Parameter errorView: The default view which you can customize, or return as is.
-   */
-  func statefulCollection(_ collectionView: StatefulCollectionView,
-                          errorAtLoadingPages errorOrNil: NSError?,
-                          errorView: PagingLoadErrorView) -> UIView
 }
 
 public extension StatefulCollectionViewCustomization {
@@ -59,12 +48,6 @@ public extension StatefulCollectionViewCustomization {
   func statefulCollection(_ collectionView: StatefulCollectionView,
                           errorAtInitialLoad errorOrNil: NSError?,
                           errorView: InitialLoadErrorView) -> UIView {
-    return errorView
-  }
-  
-  func statefulCollection(_ collectionView: StatefulCollectionView,
-                          errorAtLoadingPages errorOrNil: NSError?,
-                          errorView: PagingLoadErrorView) -> UIView {
     return errorView
   }
 }
