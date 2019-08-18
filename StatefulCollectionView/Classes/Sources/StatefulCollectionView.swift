@@ -30,7 +30,7 @@ public final class StatefulCollectionView: UIView {
   
   // MARK: - Stateful delegate
   public var statefulDelegate: StatefulCollectionViewDelegate?
-  
+
   // MARK: Internal properties
   internal lazy var collectionView = UICollectionView()
   
