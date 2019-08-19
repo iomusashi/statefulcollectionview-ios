@@ -80,6 +80,7 @@
 		66C6F11723095C7E00C8F3E5 /* StatefulCollectionView+InitialLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6F11623095C7E00C8F3E5 /* StatefulCollectionView+InitialLoad.swift */; };
 		66C6F11B23098AFD00C8F3E5 /* StatefulCollectionView+StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6F11A23098AFD00C8F3E5 /* StatefulCollectionView+StateManagement.swift */; };
 		66C6F12123098DF600C8F3E5 /* StatefulCollectionView+ContentManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6F12023098DF600C8F3E5 /* StatefulCollectionView+ContentManagement.swift */; };
+		66C6F125230AF5B400C8F3E5 /* StatefulCollectionView+PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C6F124230AF5B400C8F3E5 /* StatefulCollectionView+PullToRefresh.swift */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E906E59597539202C0610CB360AA2AC /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A60F62780B39560943CEDBF9A2BF42 /* FBSnapshotTestCase-dummy.m */; };
 		7034D0B6AE91D924AB27F6B828C79EB8 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F185B45A3EDCE205C535DF38099F6AB3 /* Closures.swift */; };
@@ -358,6 +359,7 @@
 		66C6F11623095C7E00C8F3E5 /* StatefulCollectionView+InitialLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StatefulCollectionView+InitialLoad.swift"; path = "StatefulCollectionView/Classes/Sources/Extensions/StatefulCollectionView+InitialLoad.swift"; sourceTree = "<group>"; };
 		66C6F11A23098AFD00C8F3E5 /* StatefulCollectionView+StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StatefulCollectionView+StateManagement.swift"; path = "StatefulCollectionView/Classes/Sources/Extensions/StatefulCollectionView+StateManagement.swift"; sourceTree = "<group>"; };
 		66C6F12023098DF600C8F3E5 /* StatefulCollectionView+ContentManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StatefulCollectionView+ContentManagement.swift"; path = "StatefulCollectionView/Classes/Sources/Extensions/StatefulCollectionView+ContentManagement.swift"; sourceTree = "<group>"; };
+		66C6F124230AF5B400C8F3E5 /* StatefulCollectionView+PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "StatefulCollectionView+PullToRefresh.swift"; path = "StatefulCollectionView/Classes/Sources/Extensions/StatefulCollectionView+PullToRefresh.swift"; sourceTree = "<group>"; };
 		67D3E8AF745875D646CEA9FEFA85FFB0 /* XCTestObservationCenter+CurrentTestCaseTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestObservationCenter+CurrentTestCaseTracker.m"; path = "Nimble_Snapshots/XCTestObservationCenter+CurrentTestCaseTracker.m"; sourceTree = "<group>"; };
 		67E1975F1EAE6E24FC87C3A2B84AB805 /* Pods-StatefulCollectionView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StatefulCollectionView_Example.modulemap"; sourceTree = "<group>"; };
 		69AF7929D9DFC99AC424A15523F932BC /* QuickConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickConfiguration.h; path = Sources/QuickObjectiveC/Configuration/QuickConfiguration.h; sourceTree = "<group>"; };
@@ -823,6 +825,7 @@
 			children = (
 				66C6F114230953E100C8F3E5 /* StatefulCollectionView+UIView.swift */,
 				66C6F11623095C7E00C8F3E5 /* StatefulCollectionView+InitialLoad.swift */,
+				66C6F124230AF5B400C8F3E5 /* StatefulCollectionView+PullToRefresh.swift */,
 				66C6F11A23098AFD00C8F3E5 /* StatefulCollectionView+StateManagement.swift */,
 				66C6F12023098DF600C8F3E5 /* StatefulCollectionView+ContentManagement.swift */,
 			);
@@ -1425,6 +1428,7 @@
 				66C6F10723094EE900C8F3E5 /* StatefulCollectionViewDelegate.swift in Sources */,
 				66C6F12123098DF600C8F3E5 /* StatefulCollectionView+ContentManagement.swift in Sources */,
 				66C6F11B23098AFD00C8F3E5 /* StatefulCollectionView+StateManagement.swift in Sources */,
+				66C6F125230AF5B400C8F3E5 /* StatefulCollectionView+PullToRefresh.swift in Sources */,
 				F9E895644964C2546AF2A9B731FFD98D /* StatefulCollectionView-dummy.m in Sources */,
 				66C6F10E2309512700C8F3E5 /* InitialLoadErrorView.swift in Sources */,
 				66C6F11723095C7E00C8F3E5 /* StatefulCollectionView+InitialLoad.swift in Sources */,
