@@ -74,7 +74,21 @@ public final class StatefulCollectionView: UIView {
     setupInternalViews()
   }
   
-  internal func setupInternalViews() {}
+  public override func layoutSubviews() {
+    super.layoutSubviews()
+    collectionView.frame = bounds
+    dynamicContentView.frame = bounds
+  }
+  
+  internal func setupInternalViews() {
+    addSubview(collectionView)
+    addSubview(dynamicContentView)
+    
+    refreshControl.addTarget(self,
+                             action: #selector(refreshControlValueChanged),
+                             for: .valueChanged)
+    collectionView.addSubview(refreshControl)
+  }
 }
 
 internal enum StatefulCollectionViewState {
