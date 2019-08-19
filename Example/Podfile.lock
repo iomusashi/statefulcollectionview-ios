@@ -43,7 +43,7 @@ SPEC CHECKSUMS:
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   Nimble-Snapshots: 8ec63f41ce6c7229a17be9a64edbc123b181f75b
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
-  StatefulCollectionView: 26e0af7bae17646f97d79b95dd673deac131586b
+  StatefulCollectionView: 9b3f810fe7bf7693759ed44d0234a782c61088fe
 
 PODFILE CHECKSUM: 1a5ae49d5c39b14b21d6762d4b59863644010ea8
 

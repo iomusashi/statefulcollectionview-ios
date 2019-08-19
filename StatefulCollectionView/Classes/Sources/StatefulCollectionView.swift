@@ -29,7 +29,8 @@ public final class StatefulCollectionView: UIView {
   public var customization: StatefulCollectionViewCustomization?
 
   // MARK: Internal properties
-  internal lazy var collectionView = UICollectionView()
+  internal lazy var collectionView = UICollectionView(frame: .zero,
+                                                      collectionViewLayout: UICollectionViewFlowLayout())
   
   internal lazy var dynamicContentView: UIView = { [unowned self] in
     let view = UIView(frame: self.bounds)
@@ -84,10 +85,14 @@ public final class StatefulCollectionView: UIView {
     addSubview(collectionView)
     addSubview(dynamicContentView)
     
+    collectionView.backgroundColor = UIColor.white
+    collectionView.backgroundView = UIView(frame: .zero)
+
+    guard #available(iOS 10.0, *) else { return }
     refreshControl.addTarget(self,
                              action: #selector(refreshControlValueChanged),
                              for: .valueChanged)
-    collectionView.addSubview(refreshControl)
+    collectionView.refreshControl = refreshControl
   }
 }
 
