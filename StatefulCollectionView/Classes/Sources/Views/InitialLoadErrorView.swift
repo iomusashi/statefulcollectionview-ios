@@ -66,8 +66,8 @@ public class InitialLoadErrorView: UIView {
       centered.addSubview(button)
       apply([.bottom, .centerX], ofView: button, toView: centered)
     }
-    centered.setWidthConstraintToCurrent()
-    centered.setHeightConstraintToCurrent()
+    centered.setWidthConstraint(centeredSize.width)
+    centered.setHeightConstraint(centeredSize.height)
     
     let container = constrainedContainerView()
     container.frame = CGRect.zero

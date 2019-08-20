@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     let flowLayout = UICollectionViewFlowLayout()
     flowLayout.scrollDirection = .vertical
-    flowLayout.itemSize = CGSize(width: statefulCollection.bounds.size.width,
+    flowLayout.itemSize = CGSize(width: statefulCollection.bounds.size.width / 3,
                                  height: 40.0)
     flowLayout.minimumLineSpacing = 1.0
     flowLayout.minimumInteritemSpacing = 1.0
@@ -100,6 +100,7 @@ extension ViewController: UICollectionViewDelegate {
     }
     cell.contentView.backgroundColor = UIColor.white
     let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: cell.bounds.size.width, height: 40))
+    titleLabel.textAlignment = .center
     titleLabel.text = "\(indexPath.item)"
     cell.contentView.addSubview(titleLabel)
   }
