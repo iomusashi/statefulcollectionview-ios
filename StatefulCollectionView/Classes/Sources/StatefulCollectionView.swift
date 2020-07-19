@@ -34,7 +34,7 @@ public final class StatefulCollectionView: UIView {
   
   internal lazy var dynamicContentView: UIView = { [unowned self] in
     let view = UIView(frame: self.bounds)
-    view.backgroundColor = .white
+    view.backgroundColor = self.backgroundColor
     view.isHidden = true
     return view
   }()
